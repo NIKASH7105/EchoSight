@@ -1,7 +1,3 @@
-Sure thing. Here’s your **EchoSight README styled with GitHub-friendly icons, emojis, clean formatting, and better visual hierarchy** — perfect for a polished repository.
-
----
-
 # ✨ **EchoSight – Real-Time Vision-to-Voice Assistant**
 
 > 🔊 *See the world through sound.*
@@ -150,5 +146,6 @@ Paths can be customized inside the script or passed as CLI parameters.
   * `OCR/ocr_main.py`
   * `voice/voice_engine.py`
   * `models/`
+
 
 ---
