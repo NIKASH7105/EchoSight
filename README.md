@@ -15,7 +15,7 @@ This project includes multiple coordinated subsystems:
 
 📌 **Main unified system**
 
-* `unified_echosight_system.py`
+* `unified_detection_system.py`
   *Full pipeline: YOLO + OCR + traffic-light color + voice feedback*
 
 📌 **Object detection** (`object_detection/`)
@@ -26,17 +26,16 @@ This project includes multiple coordinated subsystems:
 
 📌 **Traffic-light processing** (`traffic_signal/`)
 
-* `cnn_model.py` – CNN classifier (Red/Yellow/Green)
-* `traffic_color_system.py` – real-time color prediction + voice
+* `working_voice_system.py` – real-time color prediction + voice
 
 📌 **OCR system** (`OCR/`)
 
-* `ocr_main.py` – OCR pipeline
+* `working_ocr_pipeline.py` – OCR pipeline
 * `CRAFT/` – text-detection models & weights
 
 📌 **Voice/TTS system** (`voice/`)
 
-* `voice_engine.py` – Offline speech (pyttsx3 / Coqui)
+* `test_voice_system.py` – Offline speech (pyttsx3 / Coqui)
 
 📌 **Tests**
 
@@ -113,13 +112,13 @@ python test_full_pipeline.py
 
 ## 📁 **Important Entrypoints**
 
-| Module                           | Description                      |
-| -------------------------------- | -------------------------------- |
-| `unified_echosight_system.py`    | 🔥 Full Vision-to-Voice Pipeline |
-| `object_detection/obj_detect.py` | 🧠 YOLO detection utilities      |
-| `traffic_signal/cnn_model.py`    | 🚦 Traffic-light classifier      |
-| `OCR/ocr_main.py`                | 📚 OCR text reader               |
-| `voice/voice_engine.py`          | 🔊 Offline TTS engine            |
+| Module                                           | Description                      |
+| ------------------------------------------------ | -------------------------------- |
+| `unified_detection_system.py`                    | 🔥 Full Vision-to-Voice Pipeline |
+| `object_detection\unified_vision_live_system.py` | 🧠 YOLO detection utilities      |
+| `trafficli\working_voice_system.py`              | 🚦 Traffic-light classifier      |
+| `OCR/working_ocr_pipeline.py`                    | 📚 OCR text reader               |
+| `test_voice_system.py`                           | 🔊 Offline TTS engine            |
 
 ---
 
@@ -149,3 +148,4 @@ Paths can be customized inside the script or passed as CLI parameters.
 
 
 ---
+
